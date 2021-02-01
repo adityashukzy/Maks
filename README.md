@@ -48,14 +48,29 @@ Aditya Shukla
 
 <td width:25%>
 
-Pooja Ravi
+Shambhavi
 
 <p align="center">
-<img src = "https://avatars3.githubusercontent.com/u/66198904?s=460&u=06bd3edde2858507e8c42569d76d61b3491243ad&v=4"  height="120" alt="Ansh Sharma">
+<img src = "https://avatars.githubusercontent.com/u/67188688?s=460&u=ffaf075260d254602e6d6ce17648ecf62e291c56&v=4"  height="120" alt="Shambhavi">
 </p>
 <p align="center">
-<a href = "https://github.com/01pooja10"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/pooja-ravi-9b88861b2/">
+<a href = "https://github.com/Shambhavi272000"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/shambhavi-chaudhary-53268018b/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+
+<td width:25%>
+
+Pushp Paritosh
+
+<p align="center">
+<img src = "https://media-exp1.licdn.com/dms/image/C4E03AQGHBHDGRlpY5A/profile-displayphoto-shrink_200_200/0/1601319594702?e=1617840000&v=beta&t=TAKXhfTxgJLVCjZR0H3AtIfKJ9YZjCoktkx0LEG-0oc"  height="120" alt="Pushp">
+</p>
+<p align="center">
+<a href = "https://github.com/pushpparitosh2000"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/pushp-paritosh-14359b181/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
@@ -64,7 +79,7 @@ Pooja Ravi
 </table>
 
 ## License
-MIT © Pooja Ravi
+MIT © Aditya Shukla
 
 This project is licensed under the MIT License - see the [License](LICENSE) file for details
 
