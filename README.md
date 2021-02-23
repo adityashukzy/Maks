@@ -1,4 +1,4 @@
-# Face-Mask-Detection
+# Maks - safety simplified.
 Streamlit web-application built using OpenCV which detects the presence of face mask on a person's face.
 
 ## Data
