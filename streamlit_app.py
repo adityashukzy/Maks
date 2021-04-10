@@ -1,13 +1,6 @@
 import streamlit as st
 from tensorflow import keras
 import tensorflow as tf
-# import numpy as np
-# from PIL import Image
-
-def load_model(path):
-	model = keras.models.load_model(path)
-	model.summary()
-	return model
 
 def main():
 	st.sidebar.title("Maks is being developed as the 4th semester project for Aditya Shukla, Pushp Paritosh and Shambhavi Chaudhary for their Software Engineering & Project Management class.")
