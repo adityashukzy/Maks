@@ -5,7 +5,7 @@ from datetime import datetime
 
 def make_violator_entry_in_db(
 	confidence_pred,
-	file_path,
+	img_buffer,
 	mongo_string="mongodb+srv://admin-account:admin-password@maks-cluster.noror.mongodb.net/Test-DB?retryWrites=true&w=majority"
 	):
 	"""
@@ -19,7 +19,7 @@ def make_violator_entry_in_db(
 	print(client["Maks-Cluster"]) # Debugging convenience; to be removed in production code
 
 	## Uploading image to AWS and getting link of uploaded image
-	uploaded_img_link = aws_upload.upload_image(file_path=file_path)
+	uploaded_img_link = aws_upload.upload_image(img_buffer=img_buffer)
 
 	## Preparing timestamp of time of violation
 	now = datetime.now()
@@ -36,3 +36,6 @@ def make_violator_entry_in_db(
 	}
 
 	table.insert_one(record)
+
+if __name__ == "__main__":
+	pass
