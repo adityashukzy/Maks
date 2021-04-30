@@ -1,9 +1,12 @@
 import os
+import requests
 from tkinter import *
+from PIL import Image, ImageTk
+from io import BytesIO
 from functools import partial
 from dotenv import load_dotenv
 from tkinter import messagebox
-from mongodb_tools import mongo_auth
+import mongo_auth
 
 def validateLogin(email_id, password):
 	email = email_id.get()
@@ -35,7 +38,14 @@ window.title('Login | Maks - safety, simplified.')
 
 
 # Maks logo
-logo = PhotoImage(file="dependencies/maks-logo.png")
+url = "https://maks-images-aws-bucket.s3.ap-south-1.amazonaws.com/maks-logo.png"
+
+# http = PoolManager()
+# r = http.request('GET', url)
+response = requests.get(url)
+
+img = Image.open(BytesIO(response.content))
+logo = ImageTk.PhotoImage(img)
 logoLabel = Label(window, image=logo)
 logoLabel.place(x=50)
 
