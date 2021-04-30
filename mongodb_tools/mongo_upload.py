@@ -27,7 +27,7 @@ def make_violator_entry_in_db(
 
 	## Pulling DB variables
 	database = client['Test-DB'] # Picking database from our Mongo client
-	table = database['Test-Collection'] # Picking table from the database
+	coll = database['Test-Collection'] # Picking collection from the database
 
 	record = {
 		"timestamp": date_string,
@@ -35,7 +35,7 @@ def make_violator_entry_in_db(
 		"link-to-image": uploaded_img_link,
 	}
 
-	table.insert_one(record)
+	coll.insert_one(record)
 
 if __name__ == "__main__":
 	pass
