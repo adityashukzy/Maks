@@ -1,7 +1,9 @@
 from botocore.vendored.six import BytesIO
 import cv2
+import time
 import keras
 import numpy as np
+import playsound
 from PIL import Image
 import tensorflow as tf
 from tensorflow.keras import layers
@@ -22,7 +24,6 @@ def makePrediction(frame, model):
 
 	Returns: Float value of prediction
 	"""
-	print(frame.shape)
 	prediction = np.squeeze(model.predict(frame))
 	return prediction
 
@@ -48,13 +49,18 @@ def videoCapture(model_path="/Users/adityashukla/Documents/GitHub/facemask-model
 		count += 1
 		
 		if not ret:
-			print("Failed to grab frame! Restart Maks!")
+			# Debugging convenience
+			# print("Failed to grab frame! Restart Maks!")
 			break
-		
-		cv2.imshow("Maks ~ safety, simplified.", frame)
 
 		# Flipping the video
 		frame = cv2.flip(frame, 1)
+
+		# Adding rectangle to guide face placement
+		frame = cv2.rectangle(frame, (450, 100), (850, 600), (187, 9, 232), 3)
+		cv2.putText(frame, "Position face inside the rectangle!", (520, 92), cv2.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0), 1, cv2.LINE_AA)
+
+		cv2.imshow("Maks ~ safety, simplified.", frame)
 
 		if count % 100 == 0:
 			# Preprocessing frame before passing to model
@@ -70,7 +76,10 @@ def videoCapture(model_path="/Users/adityashukla/Documents/GitHub/facemask-model
 				result = "Wearing mask"
 			elif prediction >= 0.5:
 				result = "Not wearing mask!"
-				if previousViolations == 10:
+				if previousViolations == 5:
+					# Play sound
+					playsound.playsound("/Users/adityashukla/Documents/GitHub/Maks/dependencies/audio.wav")
+
 					# Make db-uploading calls
 					img_buffer = BytesIO() # initializing an image buffer
 					frameImage = Image.fromarray(frame)
@@ -84,9 +93,8 @@ def videoCapture(model_path="/Users/adityashukla/Documents/GitHub/facemask-model
 					previousViolations = 0
 				
 				previousViolations += 1
-
+			
 			print(result)
-			# cv2.putText(frame, result, (50,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
 		k = cv2.waitKey(1)
 		if k % 256 == 27:
