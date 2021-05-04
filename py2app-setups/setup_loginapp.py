@@ -1,11 +1,11 @@
 from setuptools import setup
 APP = ['login.py']
-DATA_FILES = []
+DATA_FILES = ['.env']
 OPTIONS = {
 	'argv_emulation': True, 
 	'site_packages': True,
 	'iconfile': 'maks-login-icon.icns',
-	'packages': ['requests', 'dotenv', 'mongodb_tools', 'PIL', 'mongo_auth', 'pymongo', 'dns'],
+	'packages': ['requests', 'tkinter', 'PIL', 'dotenv', 'mongo_auth'],
 	'plist': {
 		'CFBundleName': 'Login to Maks',
 	}
