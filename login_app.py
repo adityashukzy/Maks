@@ -6,22 +6,26 @@ from io import BytesIO
 from functools import partial
 from dotenv import load_dotenv
 from tkinter import messagebox
-import mongo_auth
+from mongodb_tools.mongo_auth import verifyLogin
 
 def validateLogin(email_id, password):
 	email = email_id.get()
 	pwd = password.get()
 	
-	if mongo_auth.verifyLogin(email, pwd):
+	if verifyLogin(email, pwd):
 		load_dotenv() # loading AWS keys from .env
 		aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID')
 		aws_secret_access_key=os.getenv('AWS_ACCESS_KEY_SECRET')
+		mongodb_auth_uri=os.getenv('MONGODB_AUTH_URI')
+		mongodb_violator_uri=os.getenv('MONGODB_VIOLATOR_URI')
 
 		# Rewriting the .env file along with the new added credentials
 		with open(".env", "w") as f:
 			f.seek(0)
 			f.write(f"AWS_ACCESS_KEY_ID={aws_access_key_id}")
 			f.write(f"\nAWS_ACCESS_KEY_SECRET={aws_secret_access_key}")
+			f.write(f"\nMONGODB_AUTH_URI={mongodb_auth_uri}")
+			f.write(f"\nMONGODB_VIOLATOR_URI={mongodb_violator_uri}")
 			f.write(f"\nEMAIL_ADDRESS={email}")
 			f.write(f"\nPASSWORD={pwd}")
 
