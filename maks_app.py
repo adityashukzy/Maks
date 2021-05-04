@@ -1,4 +1,4 @@
-from botocore.vendored.six import BytesIO
+from io import BytesIO
 import cv2
 import time
 import keras
@@ -6,7 +6,6 @@ import numpy as np
 import playsound
 from PIL import Image
 import tensorflow as tf
-from tensorflow.keras import layers
 from mongodb_tools.mongo_upload import make_violator_entry_in_db
 
 def load_model(model_path):
@@ -27,7 +26,7 @@ def makePrediction(frame, model):
 	prediction = np.squeeze(model.predict(frame))
 	return prediction
 
-def videoCapture(model_path="/Users/adityashukla/Documents/GitHub/facemask-model", camera="webcam"):
+def videoCapture(model_path="facemask-model", camera="webcam"):
 	"""
 	Captures video from webcam using OpenCV; if person appearing in image is found to not be wearing a mask for more than 3 frames, they are assessed as a violator. Call to MongoDB database managing utility is made to upload image of violator to database.
 
@@ -43,6 +42,7 @@ def videoCapture(model_path="/Users/adityashukla/Documents/GitHub/facemask-model
 	# Initializing helper variables
 	count = 0
 	previousViolations = 0
+	previousCorrects = 0
 
 	while True:
 		ret, frame = cam.read()
@@ -74,11 +74,18 @@ def videoCapture(model_path="/Users/adityashukla/Documents/GitHub/facemask-model
 			prediction = makePrediction(img, model)
 			if prediction < 0.5:
 				result = "Wearing mask"
+				if previousCorrects == 4:
+					# Play sound
+					playsound.playsound("non_violator.wav")
+					previousCorrects = 0
+				
+				previousCorrects += 1
+
 			elif prediction >= 0.5:
 				result = "Not wearing mask!"
-				if previousViolations == 5:
+				if previousViolations == 4:
 					# Play sound
-					playsound.playsound("/Users/adityashukla/Documents/GitHub/Maks/dependencies/audio.wav")
+					playsound.playsound("violator.wav")
 
 					# Make db-uploading calls
 					img_buffer = BytesIO() # initializing an image buffer
