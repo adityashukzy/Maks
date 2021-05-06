@@ -1,32 +1,44 @@
-# Maks - safety simplified.
-Streamlit web-application built using OpenCV which detects the presence of face mask on a person's face.
+# Maks ~ safety, simplified. <img src=https://maks-images-aws-bucket.s3.ap-south-1.amazonaws.com/maks-logo.png width=340 align='right'>
+![](https://img.shields.io/github/forks/adityashukzy/Maks?style=for-the-badge)
+![](https://img.shields.io/github/stars/adityashukzy/Maks?color=purple&style=for-the-badge)
+![](https://img.shields.io/github/license/adityashukzy/Maks?style=for-the-badge)
 
-## Data
-__Dataset Used__: Face Mask Detection Dataset by .
-
-You may find the dataset used below at:
-
-https://www.google.com/
-
-## Description
-**FMD** is ...
-
-## Problem Statement
+Maks is an AI-powered software which helps venues safely allow reopening of the world after COVID-19. By installing the software on computer devices placed at all entrypoints to a venue, any entering customers will have to stand in front of Maks. If they are not wearing a mask, their image will be clicked and uploaded to our database, and they will be marked as a violator. Additionally, a warning audio message will be played informing them that they are in violation of the safety guidelines and they may also be denied entry.
+<br><br>
 
 
-## Features
+## Built With:
+| Software | Version |
+|----------|---------|
+| Python 3 | 3.7.6 |
+| Tensorflow-Keras API | 2.4.0 |
+| OpenCV | 3.4.5 |
+| PyMongo | 3.11.3 |
+| Boto3 | 1.16.20 |
 
-## Screenshots of the Web-App
-
-## Challenges Faced
-1) 
-
-## Future Developments
-1)
-
-## Contributors
+## Infrastructure Used
+| Infrastructure | Service |
+|----------|-------------|
+| Amazon AWS | S3 (PaaS) |
+| MongoDB | Database Cluster (DBaaS) |
 
 
+## Building from Source Code
+* Clone this repository
+```
+git clone https://github.com/adityashukzy/Maks.git
+```
+* Install dependencies
+```
+pip install requirements.txt
+```
+* Run `python3 login_app.py` and enter the login details to your account.
+* Finally, run `python maks_app.py` and you're good to go!
+
+***To understand how registering for an account and accessing the account dashboard works, please see our <a href=''>Wiki</a>.***
+<br>
+
+## Built by
 <table align="center">
 <tr align="center">
 
@@ -48,10 +60,10 @@ Aditya Shukla
 
 <td width:25%>
 
-Shambhavi
+Shambhavi Chaudhary
 
 <p align="center">
-<img src = "https://avatars.githubusercontent.com/u/67188688?s=460&u=ffaf075260d254602e6d6ce17648ecf62e291c56&v=4"  height="120" alt="Shambhavi">
+<img src = "https://media-exp1.licdn.com/dms/image/C5603AQHDMfOKs3AtQg/profile-displayphoto-shrink_800_800/0/1592561627052?e=1625702400&v=beta&t=cHDqjs0VlVUtu-_vy8a3XRUM00NRaqmBuNuXN2OO5HA"  height="120" alt="Shambhavi">
 </p>
 <p align="center">
 <a href = "https://github.com/Shambhavi272000"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
@@ -66,7 +78,7 @@ Shambhavi
 Pushp Paritosh
 
 <p align="center">
-<img src = "https://media-exp1.licdn.com/dms/image/C4E03AQGHBHDGRlpY5A/profile-displayphoto-shrink_200_200/0/1601319594702?e=1617840000&v=beta&t=TAKXhfTxgJLVCjZR0H3AtIfKJ9YZjCoktkx0LEG-0oc"  height="120" alt="Pushp">
+<img src = "https://media-exp1.licdn.com/dms/image/C4E03AQHYNKfDI1n3NQ/profile-displayphoto-shrink_800_800/0/1617983207281?e=1625702400&v=beta&t=zG3SBv2fAYF4uotrWB95nfjdaY4Tt5UCZy8iGU5XyYQ"  height="120" alt="Pushp">
 </p>
 <p align="center">
 <a href = "https://github.com/pushpparitosh2000"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
@@ -77,14 +89,3 @@ Pushp Paritosh
 </td>
 
 </table>
-
-## License
-MIT © Aditya Shukla
-
-This project is licensed under the MIT License - see the [License](LICENSE) file for details
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-<p align="center">
-	Made with ❤️ by Aditya Shuka, Shambhavi and Pushp Paritosh
-</p>
