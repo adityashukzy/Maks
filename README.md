@@ -7,7 +7,7 @@ Maks is an AI-powered software which helps venues safely allow reopening of the 
 <br><br>
 
 
-## Built With:
+## Built With
 | Software | Version |
 |----------|---------|
 | Python 3 | 3.7.6 |
@@ -23,7 +23,7 @@ Maks is an AI-powered software which helps venues safely allow reopening of the 
 | MongoDB | Database Cluster (DBaaS) |
 
 
-## Building from Source Code
+## Running from Source Code
 * Clone this repository
 ```
 git clone https://github.com/adityashukzy/Maks.git
@@ -89,3 +89,6 @@ Pushp Paritosh
 </td>
 
 </table>
+
+<p align="center">Made with ❤️ at SRM Institute of Science & Technology</p>
+<hr>
