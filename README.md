@@ -35,7 +35,7 @@ pip install requirements.txt
 * Run `python3 login_app.py` and enter the login details to your account.
 * Finally, run `python maks_app.py` and you're good to go!
 
-***To understand how registering for an account and accessing the account dashboard works, please see our <a href=''>Wiki</a>.***
+***To understand how registering for an account and accessing the account dashboard works, please see our <a href='https://github.com/adityashukzy/Maks/wiki/The-Login-Process'>Wiki</a>.***
 <br>
 
 ## Built by
