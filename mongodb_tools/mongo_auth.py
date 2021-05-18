@@ -14,7 +14,7 @@ def verifyLogin(
 	client = MongoClient(mongo_string)
 
 	database = client["User-Credentials"]
-	coll = database["Email-Password-Credentials"]
+	coll = database["users"]
 
 	creds = coll.find_one({"email": email})
 	hashed_pwd = creds["password"]
@@ -23,7 +23,7 @@ def verifyLogin(
 	return bcrypt.checkpw(password.encode('utf8'), hashed_pwd.encode('utf8'))
 
 if __name__ == "__main__":
-	if verifyLogin(email="adityashukzy@gmail.com", password="password"):
+	if verifyLogin(email="adityashukzy@gmail.com", password="letsmake381dents"):
 		print("Login authenticated!")
 	else:
 		print("Wrong credentials!")

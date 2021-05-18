@@ -76,7 +76,7 @@ def videoCapture(model_path="facemask-model", camera="webcam"):
 				result = "Wearing mask"
 				if previousCorrects == 4:
 					# Play sound
-					playsound.playsound("non_violator.wav")
+					playsound.playsound("dependencies/non_violator.wav")
 					previousCorrects = 0
 				
 				previousCorrects += 1
@@ -85,7 +85,7 @@ def videoCapture(model_path="facemask-model", camera="webcam"):
 				result = "Not wearing mask!"
 				if previousViolations == 4:
 					# Play sound
-					playsound.playsound("violator.wav")
+					playsound.playsound("dependencies/violator.wav")
 
 					# Make db-uploading calls
 					img_buffer = BytesIO() # initializing an image buffer
