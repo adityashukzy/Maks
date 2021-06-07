@@ -78,7 +78,7 @@ Shambhavi Chaudhary
 Pushp Paritosh
 
 <p align="center">
-<img src = "https://media-exp1.licdn.com/dms/image/C4E03AQHYNKfDI1n3NQ/profile-displayphoto-shrink_800_800/0/1617983207281?e=1625702400&v=beta&t=zG3SBv2fAYF4uotrWB95nfjdaY4Tt5UCZy8iGU5XyYQ"  height="120" alt="Pushp">
+<img src = "https://media-exp3.licdn.com/dms/image/C4E03AQEs9AeqD_6jog/profile-displayphoto-shrink_200_200/0/1621154467029?e=1628726400&v=beta&t=iMYJKQZb-HBrAaAphL6zO8A1xfH1ERYJBgzNIOx7k6k"  height="120" alt="Pushp">
 </p>
 <p align="center">
 <a href = "https://github.com/pushpparitosh2000"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
