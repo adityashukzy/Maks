@@ -60,14 +60,14 @@ Aditya Shukla
 
 <td width:25%>
 
-Shambhavi Chaudhary
+Riju Mukherjee
 
 <p align="center">
-<img src = "https://media-exp1.licdn.com/dms/image/C5603AQHDMfOKs3AtQg/profile-displayphoto-shrink_800_800/0/1592561627052?e=1625702400&v=beta&t=cHDqjs0VlVUtu-_vy8a3XRUM00NRaqmBuNuXN2OO5HA"  height="120" alt="Shambhavi">
+<img src = "https://media-exp3.licdn.com/dms/image/C5603AQGz_TnbZ_WowA/profile-displayphoto-shrink_800_800/0/1605953680033?e=1629331200&v=beta&t=OLoEpba4L-xEH_Q_6Dscxf0KpWF8Q2hYiZ3WoLBPo4I"  height="120" alt="Riju">
 </p>
 <p align="center">
-<a href = "https://github.com/Shambhavi272000"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/shambhavi-chaudhary-53268018b/">
+<a href = "https://github.com/riju561"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/rijumukherjee561/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
@@ -75,14 +75,14 @@ Shambhavi Chaudhary
 
 <td width:25%>
 
-Pushp Paritosh
+Rahul Sharma
 
 <p align="center">
-<img src = "https://media-exp3.licdn.com/dms/image/C4E03AQEs9AeqD_6jog/profile-displayphoto-shrink_200_200/0/1621154467029?e=1628726400&v=beta&t=iMYJKQZb-HBrAaAphL6zO8A1xfH1ERYJBgzNIOx7k6k"  height="120" alt="Pushp">
+<img src = "https://media-exp3.licdn.com/dms/image/C5603AQE5M9KFrRieoQ/profile-displayphoto-shrink_800_800/0/1570031307304?e=1629331200&v=beta&t=k4nA_0lvZ6xKpGjE_yCEhsop2UB95rEnm9DmvYpzeVQ"  height="120" alt="Rahul">
 </p>
 <p align="center">
-<a href = "https://github.com/pushpparitosh2000"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/pushp-paritosh-14359b181/">
+<a href = "https://github.com/RahulSharma099"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/rahulsharma099/">
 <img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
 </a>
 </p>
