@@ -63,7 +63,7 @@ Aditya Shukla
 Riju Mukherjee
 
 <p align="center">
-<img src = "https://media-exp3.licdn.com/dms/image/C5603AQGz_TnbZ_WowA/profile-displayphoto-shrink_800_800/0/1605953680033?e=1629331200&v=beta&t=OLoEpba4L-xEH_Q_6Dscxf0KpWF8Q2hYiZ3WoLBPo4I"  height="120" alt="Riju">
+<img src = "https://avatars.githubusercontent.com/u/63897835?v=4"  height="120" alt="Riju">
 </p>
 <p align="center">
 <a href = "https://github.com/riju561"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
@@ -78,7 +78,7 @@ Riju Mukherjee
 Rahul Sharma
 
 <p align="center">
-<img src = "https://media-exp3.licdn.com/dms/image/C5603AQE5M9KFrRieoQ/profile-displayphoto-shrink_800_800/0/1570031307304?e=1629331200&v=beta&t=k4nA_0lvZ6xKpGjE_yCEhsop2UB95rEnm9DmvYpzeVQ"  height="120" alt="Rahul">
+<img src = "https://avatars.githubusercontent.com/u/52157331?v=4"  height="120" alt="Rahul">
 </p>
 <p align="center">
 <a href = "https://github.com/RahulSharma099"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
